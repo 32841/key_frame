@@ -1,0 +1,194 @@
+.wayoutside {
+  width: 800px;
+
+}
+
+.outside {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  clip-path: circle(50% at 50% 50%);
+
+}
+
+.box3 {
+  background: white;
+
+  margin-left: 10px;
+  clip-path: circle(50% at 50% 50%);
+  animation: geeks 5s infinite;
+  animation-play-state: paused;
+  margin-top: -20px;
+
+
+
+}
+
+.box2 {
+  height: 150px;
+  line-height: 150px;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  top: 150px;
+  height: 150px;
+  font-size: 40px;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  width: 500px;
+  background: #ddd;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+}
+
+@keyframes geeks {
+  0% {
+    margin-left: 50px;
+    margin-top: -20px;
+    width: 70px;
+    height: 70px;
+
+  }
+
+  20% {
+    margin-left: 170px;
+    margin-top: 0px;
+    width: 80px;
+    height: 80px;
+
+
+  }
+
+  35% {
+    margin-left: 190px;
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+
+
+  }
+
+  100% {
+    margin-left: 210px;
+    margin-top: -20px;
+    width: 80px;
+    height: 80px;
+
+  }
+}
+
+.box3.horizTranslate {
+  animation-play-state: running;
+}
+
+
+/* makes it so it starts and stops when you hover over the div */
+
+.box3:hover {
+  animation-play-state: running;
+}
+
+/* example2 */
+
+
+.wayoutside1 {
+  width: 800px;
+
+}
+
+.outside1 {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  clip-path: circle(50% at 50% 50%);
+
+}
+
+.box31 {
+  background: rgb(255, 0, 0);
+
+  margin-left: 10px;
+  clip-path: circle(50% at 50% 50%);
+  animation: geeks1 1s infinite;
+  animation-play-state: paused;
+  margin-top: -50px;
+
+
+
+}
+
+.box21 {
+  height: 160px;
+  line-height: 160px;
+}
+
+.box1 {
+  position: relative;
+  width: 700px;
+  top: 250px;
+  height: 350px;
+  font-size: 80px;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  width: 500px;
+  background: #868080;
+
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  overflow: hidden;
+}
+
+@keyframes geeks1 {
+  0% {
+    margin-left: 200px;
+    margin-top: -30px;
+    width: 60px;
+    height: 70px;
+
+  }
+
+  20% {
+    margin-left: 160px;
+    margin-top: 0px;
+    width: 70px;
+    height: 80px;
+
+
+  }
+
+  35% {
+    margin-left: 180px;
+    margin-top: -30px;
+    width: 70px;
+    height: 80px;
+
+
+  }
+
+  100% {
+    margin-left: 40px;
+    margin-top: -30px;
+    width: 70px;
+    height: 80px;
+
+  }
+}
+
+.box31.horizTranslate1 {
+  animation-play-state: running;
+}
+
+
+/* makes it so it starts and stops when you hover over the div */
+
+.box31:hover {
+  animation-play-state: running;
+}

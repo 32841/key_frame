@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="some1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
+    <p>
+        Hover over the GeeksforGeeks
+        to run the animation.
+    </p>
+
+    <div class="box">GeeksforGeeks</div>
+
+    <button class='toggleButton' onclick='toggleTransition1()'>Toggle</button>
+    <p>
+        Hover over the GeeksforGeeks
+        to run the animation.
+    </p>
+
+    <div class="box1">GeeksforGeeks</div>
+
+    <script>
+        var boxOne = document.getElementsByClassName('box')[0];
+        var running = false;
+
+        var toggleTransition = function () {
+            if (!running) {
+                boxOne.classList.add('horizTranslate');
+            } else {
+                boxOne.classList.remove('horizTranslate');
+            }
+
+            running = !running;
+        }
+        var boxOne1 = document.getElementsByClassName('box1')[0];
+        var running1 = false;
+
+        var toggleTransition1 = function () {
+            if (!running1) {
+                boxOne1.classList.add('horizTranslate1');
+            } else {
+                boxOne1.classList.remove('horizTranslate1');
+            }
+
+            running1 = !running1;
+        }
+    </script>
+
+</body>
+
+</html>

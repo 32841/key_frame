@@ -1,0 +1,65 @@
+.box {
+    position: relative;
+    animation: geeks 5s infinite;
+    animation-play-state: paused;
+    height: 80px;
+    font-size: 80px;
+
+}
+
+@keyframes geeks {
+    0% {
+        left: 0px;
+        background: rgb(160, 23, 23);
+
+    }
+
+    100% {
+        left: 500px;
+        background: rgb(55, 131, 24);
+        ;
+    }
+}
+
+.box.horizTranslate {
+    animation-play-state: running;
+}
+
+.box:hover {
+    animation-play-state: running;
+}
+
+.box1 {
+    position: relative;
+    animation: geeks1 1s infinite;
+    animation-play-state: paused;
+    height: 80px;
+    font-size: 80px;
+
+}
+
+@keyframes geeks1 {
+    0% {
+        left: 0px;
+        background: rgb(0, 0, 0);
+        color: aqua;
+        top: 0px
+    }
+
+    100% {
+        left: 500px;
+        background: rgb(255, 255, 255);
+        color: blueviolet;
+        top: 500px;
+    }
+}
+
+.box1.horizTranslate1 {
+    animation-play-state: running;
+}
+
+.box1:hover {
+    animation-play-state: running;
+}
+
+-->
